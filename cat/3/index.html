@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>购物 - 路西法小铺</title>
+<meta name="description" content="路西法小铺 — 数字商品商店">
+<meta name="theme-color" content="#050605">
+<meta property="og:title" content="购物 - 路西法小铺">
+<meta property="og:description" content="路西法小铺 — 数字商品商店">
+<meta property="og:type" content="website">
+<link rel="icon" href="../../assets/img/favicon.webp">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="" data-prefix="../../" data-depth="2">
+<header class="ls-navbar">
+  <div class="ls-container">
+    <div class="ls-navbar__inner">
+      <a class="ls-brand" href="../../">
+        <img class="ls-brand__logo" src="../../assets/img/favicon.webp" alt="路西法小铺" width="22" height="22">
+        <span class="ls-brand__name">路西法小铺</span>
+      </a>
+      <nav class="ls-nav" aria-label="main">
+        <a class="ls-nav__link" href="../../" data-nav="shop"><svg class="ls-i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg><span data-i18n="shop">购物</span></a>
+        <a class="ls-nav__link" href="../../user/index/query/" data-nav="orders"><svg class="ls-i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.7 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v4.1"/><path d="m21 21-1.9-1.9"/><circle cx="17" cy="17" r="3"/></svg><span data-i18n="orders">订单查询</span></a>
+      </nav>
+      <div class="ls-search ls-search--desktop" role="search"><div class="ls-search__group"><span class="ls-search__prefix"><svg class="ls-i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></span><input class="ls-search__input" type="search" placeholder="搜索商品关键词.." data-i18n-ph="searchPlaceholder" aria-label="搜索"></div></div>
+      <div class="ls-lang">
+        <button type="button" class="ls-lang__btn" title="语言" data-i18n-title="language" aria-haspopup="menu" aria-expanded="false">
+          <svg class="ls-i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span class="ls-lang__code">简</span><svg class="ls-i ls-lang__caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="ls-lang__menu" role="menu"><button type="button" role="menuitemradio" aria-checked="true" class="ls-lang__item is-active" data-lang="zh-cn">简体中文</button><button type="button" role="menuitemradio" aria-checked="false" class="ls-lang__item" data-lang="zh-tw">繁體中文</button><button type="button" role="menuitemradio" aria-checked="false" class="ls-lang__item" data-lang="en">English</button><button type="button" role="menuitemradio" aria-checked="false" class="ls-lang__item" data-lang="ja">日本語</button></div>
+      </div>
+      <div class="ls-account">
+        <a class="ls-account__link" href="javascript:void(0)" data-account="login" data-i18n="login">登录</a>
+        <a class="ls-account__btn" href="javascript:void(0)" data-account="register" data-i18n="register">创建账号</a>
+      </div>
+      <button type="button" class="ls-burger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="ls-burger__open"><svg class="ls-i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg></span><span class="ls-burger__close" hidden><svg class="ls-i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
+      </button>
+      <div class="ls-collapse">
+        <nav class="ls-nav ls-nav--stacked" aria-label="mobile">
+          <a class="ls-nav__link" href="../../" data-nav="shop"><svg class="ls-i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg><span data-i18n="shop">购物</span></a>
+          <a class="ls-nav__link" href="../../user/index/query/" data-nav="orders"><svg class="ls-i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.7 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v4.1"/><path d="m21 21-1.9-1.9"/><circle cx="17" cy="17" r="3"/></svg><span data-i18n="orders">订单查询</span></a>
+        </nav>
+        <div class="ls-search ls-search--mobile" role="search"><div class="ls-search__group"><span class="ls-search__prefix"><svg class="ls-i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></span><input class="ls-search__input" type="search" placeholder="搜索商品关键词.." data-i18n-ph="searchPlaceholder" aria-label="搜索"></div></div>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="ls-main">
+  <div class="ls-container">
+    <section class="ls-panel">
+  <div class="ls-panel__header">
+    <span class="ls-panel__icon"><svg class="ls-i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"/><path d="M8 6v8"/></svg></span>
+    <h6 class="ls-panel__title" data-i18n="notice">公告</h6>
+  </div>
+  <div class="ls-panel__body ls-notice">
+    <p>温馨提示：请确保在遵守当地法律的前提下使用本网站提供的服务，严禁将其用于任何非法用途。本站所提供的商品均为虚拟商品，除非因商品本身问题，售出后概不退换。如有疑问，请在购买前咨询客服，以确保清楚了解商品信息，再决定是否下单。</p>
+    <p class="ls-notice__warn is-gap-34">为保障用户隐私，本站不开放账户注册。下单时仅需填写任意联系方式（如自定义英文名、数字ID、邮箱或TG账号等），确保唯一即可完成订单。</p>
+    <p class="ls-notice__link is-gap-17">联系客服 <a class="ls-tg" href="https://t.me/imluxifa" target="_blank" rel="noopener noreferrer" data-tg="1" title="Telegram @imluxifa">telegram</a> （网站未有您想要的的数据，可联系客服定制购买）</p>
+    <p class="ls-notice__link is-gap-32">客 服 ：<span class="ls-notice__handle"><a class="ls-tg" href="https://t.me/imluxifa" target="_blank" rel="noopener noreferrer" data-tg="1" title="Telegram @imluxifa">@imluxifa</a></span></p>
+    <p class="ls-notice__plain is-gap-16">登录邮箱时请使用第三方工具：</p>
+    <p class="ls-notice__tools is-gap-0">1.雷鸟下载地址（imap登陆，不要网页登陆）<a href="https://www.thunderbird.net/zh-CN/" target="_blank" rel="noreferrer noopener">https://www.thunderbird.net/zh-CN/</a></p>
+    <p class="ls-notice__tools is-gap-17">2.foxmail下载地址（imap登陆，不要网页登陆）<a href="https://www.foxmail.com/" target="_blank" rel="noreferrer noopener">https://www.foxmail.com/</a></p>
+    <h4 class="ls-notice__heading">本站声明：</h4>
+    <p class="ls-notice__decl">1、本站不出售【与中国大陆相关的】任何商品！</p>
+    <p class="ls-notice__decl">2、本站所有商品仅供娱乐和学习，请勿用于任何非法用途，由此引起的一切后果与本站无关，违者自行承担法律责任!</p>
+    <p class="ls-notice__decl">3、本站商品价格均以美元$显示，仅支持 USDT 付款。下单支付时，系统将根据实时汇率自动把人民币金额换算为对应的 USDT 金额，无需手动计算。</p>
+  </div>
+</section>
+    <section class="ls-panel">
+      <div class="ls-panel__header">
+        <span class="ls-panel__icon"><svg class="ls-i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></span>
+        <h6 class="ls-panel__title" data-i18n="buy">购买</h6>
+      </div>
+      <div class="ls-panel__body">
+        <div class="ls-chips"><a class="ls-chip" data-id="2" href="../../cat/2/"><span class="ls-chip__icon" style="background-image:url(../../assets/img/icons/202605240025122335337.webp)"></span>combolist</a><a class="ls-chip is-primary" data-id="3" href="../../cat/3/"><span class="ls-chip__icon" style="background-image:url(../../assets/img/icons/202605240025366755818.webp)"></span>mail</a><a class="ls-chip" data-id="4" href="../../cat/4/"><span class="ls-chip__icon" style="background-image:url(../../assets/img/icons/202605241230344976132.webp)"></span>Vip Cloud</a><a class="ls-chip" data-id="5" href="../../cat/5/"><span class="ls-chip__icon" style="background-image:url(../../assets/img/icons/202605241231008293205.webp)"></span>Hack</a><a class="ls-chip" data-id="6" href="../../cat/6/"><span class="ls-chip__icon" style="background-image:url(../../assets/img/icons/202605241830438491954.webp)"></span>Crawler</a><a class="ls-chip" data-id="7" href="../../cat/7/"><span class="ls-chip__icon" style="background-image:url(../../assets/img/icons/202605241835234320912.webp)"></span>Checker</a></div>
+        <div class="ls-grid"><a class="ls-col" data-id="10" data-cat="3" data-name="日本邮箱数据 2300万条出售（适用于日本站钓鱼）" href="../../item/10/"><div class="ls-card"><div class="ls-card__thumb" style="background-image:url(../../assets/img/covers/202605240153195673666.webp)"></div><div class="ls-card__body"><div class="ls-tags"><span class="ls-badge ls-badge--success" data-i18n="onlineDeliver">在线发货</span></div><p class="ls-card__title">日本邮箱数据 2300万条出售（适用于日本站钓鱼）</p><div class="ls-card__stat"><div class="ls-price"><span class="ls-price__unit">$</span>3500</div></div></div></div></a><a class="ls-col" data-id="11" data-cat="3" data-name="美国邮箱数据 1700 万条出售（适用于美国站钓鱼）" href="../../item/11/"><div class="ls-card"><div class="ls-card__thumb" style="background-image:url(../../assets/img/covers/202605241218559820276.webp)"></div><div class="ls-card__body"><div class="ls-tags"><span class="ls-badge ls-badge--success" data-i18n="onlineDeliver">在线发货</span></div><p class="ls-card__title">美国邮箱数据 1700 万条出售（适用于美国站钓鱼）</p><div class="ls-card__stat"><div class="ls-price"><span class="ls-price__unit">$</span>3100</div></div></div></div></a><a class="ls-col" data-id="12" data-cat="3" data-name="加拿大邮箱数据 2400 万条出售（适用于加拿大站钓鱼）" href="../../item/12/"><div class="ls-card"><div class="ls-card__thumb" style="background-image:url(../../assets/img/covers/202605241224172365465.webp)"></div><div class="ls-card__body"><div class="ls-tags"><span class="ls-badge ls-badge--success" data-i18n="onlineDeliver">在线发货</span></div><p class="ls-card__title">加拿大邮箱数据 2400 万条出售（适用于加拿大站钓鱼）</p><div class="ls-card__stat"><div class="ls-price"><span class="ls-price__unit">$</span>3500</div></div></div></div></a><a class="ls-col" data-id="13" data-cat="3" data-name="英国邮箱数据 2000 万条出售（适用于英国站钓鱼）" href="../../item/13/"><div class="ls-card"><div class="ls-card__thumb" style="background-image:url(../../assets/img/covers/202605241225501546951.webp)"></div><div class="ls-card__body"><div class="ls-tags"><span class="ls-badge ls-badge--success" data-i18n="onlineDeliver">在线发货</span></div><p class="ls-card__title">英国邮箱数据 2000 万条出售（适用于英国站钓鱼）</p><div class="ls-card__stat"><div class="ls-price"><span class="ls-price__unit">$</span>2800</div></div></div></div></a><a class="ls-col" data-id="27" data-cat="3" data-name="澳大利亚（AU）邮箱数据870万条合集（适用于澳洲站钓鱼）" href="../../item/27/"><div class="ls-card"><div class="ls-card__thumb" style="background-image:url(../../assets/img/covers/202607131720023083791.webp)"></div><div class="ls-card__body"><div class="ls-tags"><span class="ls-badge ls-badge--success" data-i18n="onlineDeliver">在线发货</span></div><p class="ls-card__title">澳大利亚（AU）邮箱数据870万条合集（适用于澳洲站钓鱼）</p><div class="ls-card__stat"><div class="ls-price"><span class="ls-price__unit">$</span>1800</div></div></div></div></a><a class="ls-col" data-id="28" data-cat="3" data-name="台湾邮箱数据 440万条出售（适用于台湾站钓鱼）" href="../../item/28/"><div class="ls-card"><div class="ls-card__thumb" style="background-image:url(../../assets/img/covers/202607141556368419372.webp)"></div><div class="ls-card__body"><div class="ls-tags"><span class="ls-badge ls-badge--success" data-i18n="onlineDeliver">在线发货</span></div><p class="ls-card__title">台湾邮箱数据 440万条出售（适用于台湾站钓鱼）</p><div class="ls-card__stat"><div class="ls-price"><span class="ls-price__unit">$</span>1300</div></div></div></div></a></div>
+        <div class="ls-item-message" data-i18n="empty" hidden>没有商品</div>
+      </div>
+    </section>
+  </div>
+</main>
+<div class="ls-toast" role="status" aria-live="polite"></div>
+<script src="../../assets/app.js" defer></script>
+</body>
+</html>

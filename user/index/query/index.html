@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>订单查询 - 路西法小铺</title>
+<meta name="description" content="路西法小铺 — 数字商品商店">
+<meta name="theme-color" content="#050605">
+<meta property="og:title" content="订单查询 - 路西法小铺">
+<meta property="og:description" content="路西法小铺 — 数字商品商店">
+<meta property="og:type" content="website">
+<link rel="icon" href="../../../assets/img/favicon.webp">
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body class="ls-page-query" data-prefix="../../../" data-depth="3">
+<header class="ls-navbar">
+  <div class="ls-container">
+    <div class="ls-navbar__inner">
+      <a class="ls-brand" href="../../../">
+        <img class="ls-brand__logo" src="../../../assets/img/favicon.webp" alt="路西法小铺" width="22" height="22">
+        <span class="ls-brand__name">路西法小铺</span>
+      </a>
+      <nav class="ls-nav" aria-label="main">
+        <a class="ls-nav__link" href="../../../" data-nav="shop"><svg class="ls-i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg><span data-i18n="shop">购物</span></a>
+        <a class="ls-nav__link" href="../../../user/index/query/" data-nav="orders"><svg class="ls-i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.7 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v4.1"/><path d="m21 21-1.9-1.9"/><circle cx="17" cy="17" r="3"/></svg><span data-i18n="orders">订单查询</span></a>
+      </nav>
+      <div class="ls-search ls-search--desktop" role="search"><div class="ls-search__group"><span class="ls-search__prefix"><svg class="ls-i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></span><input class="ls-search__input" type="search" placeholder="搜索商品关键词.." data-i18n-ph="searchPlaceholder" aria-label="搜索"></div></div>
+      <div class="ls-lang">
+        <button type="button" class="ls-lang__btn" title="语言" data-i18n-title="language" aria-haspopup="menu" aria-expanded="false">
+          <svg class="ls-i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span class="ls-lang__code">简</span><svg class="ls-i ls-lang__caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="ls-lang__menu" role="menu"><button type="button" role="menuitemradio" aria-checked="true" class="ls-lang__item is-active" data-lang="zh-cn">简体中文</button><button type="button" role="menuitemradio" aria-checked="false" class="ls-lang__item" data-lang="zh-tw">繁體中文</button><button type="button" role="menuitemradio" aria-checked="false" class="ls-lang__item" data-lang="en">English</button><button type="button" role="menuitemradio" aria-checked="false" class="ls-lang__item" data-lang="ja">日本語</button></div>
+      </div>
+      <div class="ls-account">
+        <a class="ls-account__link" href="javascript:void(0)" data-account="login" data-i18n="login">登录</a>
+        <a class="ls-account__btn" href="javascript:void(0)" data-account="register" data-i18n="register">创建账号</a>
+      </div>
+      <button type="button" class="ls-burger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="ls-burger__open"><svg class="ls-i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg></span><span class="ls-burger__close" hidden><svg class="ls-i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
+      </button>
+      <div class="ls-collapse">
+        <nav class="ls-nav ls-nav--stacked" aria-label="mobile">
+          <a class="ls-nav__link" href="../../../" data-nav="shop"><svg class="ls-i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg><span data-i18n="shop">购物</span></a>
+          <a class="ls-nav__link" href="../../../user/index/query/" data-nav="orders"><svg class="ls-i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.7 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v4.1"/><path d="m21 21-1.9-1.9"/><circle cx="17" cy="17" r="3"/></svg><span data-i18n="orders">订单查询</span></a>
+        </nav>
+        <div class="ls-search ls-search--mobile" role="search"><div class="ls-search__group"><span class="ls-search__prefix"><svg class="ls-i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></span><input class="ls-search__input" type="search" placeholder="搜索商品关键词.." data-i18n-ph="searchPlaceholder" aria-label="搜索"></div></div>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="ls-main">
+  <div class="ls-container">
+    <section class="ls-panel">
+      <div class="ls-panel__header">
+        <span class="ls-panel__icon"><svg class="ls-i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></span>
+        <h6 class="ls-panel__title" data-i18n="queryTitle">订单查询</h6>
+      </div>
+      <div class="ls-panel__body">
+        <form class="ls-order-form" data-query>
+          <input class="ls-input ls-order-form__input" type="text" name="keywords" placeholder="订单号/联系方式" data-i18n-ph="queryPh">
+          <button class="ls-btn" type="submit"><svg class="ls-i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg><span data-i18n="queryBtn">查询订单</span></button>
+        </form>
+      </div>
+    </section>
+
+    <section class="ls-panel ls-no-result" hidden>
+      <div class="ls-panel__header">
+        <span class="ls-panel__icon"><svg class="ls-i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></span>
+        <h6 class="ls-panel__title" data-i18n="queryTitle">订单查询</h6>
+      </div>
+      <div class="ls-panel__body ls-center">
+        <div class="ls-no-result__icon"><svg class="ls-i " width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></div>
+        <h6 class="ls-no-result__title" data-i18n="noResultTitle">未找到相关订单</h6>
+        <p class="ls-no-result__text" data-i18n="noResultText">请检查输入信息是否正确，或联系客服协助查询</p>
+      </div>
+    </section>
+  </div>
+</main>
+<div class="ls-toast" role="status" aria-live="polite"></div>
+<script src="../../../assets/app.js" defer></script>
+</body>
+</html>
